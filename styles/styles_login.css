@@ -1,0 +1,33 @@
+/* 
+$palette-color1: #edf8e9;
+$palette-color2: #c7e9c0;
+$palette-color3: #a1d99b;
+$palette-color4: #74c476;
+$palette-color5: #41ab5d;
+$palette-color6: #238b45;
+$palette-color7: #005a32;
+
+Drew userN: Dogfish
+*/
+body {
+  background-color: #c7e9c0;
+}
+
+.btn-color {
+  background-color: #238b45;
+  color: #fff;
+}
+
+.profile-image-pic {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.cardbody-color {
+  background-color: #edf8e9;
+}
+
+a {
+  text-decoration: none;
+}
