@@ -1,20 +1,3 @@
-// document.querySelector(".calc-btn").addEventListener("click", function () {
-//   var manifestTable = {};
-
-//   const allRowsAfterFirst = data.slice(1);
-//   console.log(allRowsAfterFirst);
-// });
-
-// function runCalculations(text) {
-//   if (!text || !table) {
-//     return;
-//   }
-//   const allRowsAfterFirst = data.slice(1);
-//   console.log(allRowsAfterFirst);
-// }
-
-// document.querySelector("calcbtn").addEventListener("click", getTableArray());
-
 function getTableArray() {
   const tableManifest = document.getElementById("table");
   const tableManifestArray = [];
@@ -24,11 +7,11 @@ function getTableArray() {
     return null;
   }
 
-  const rows = tableManifest.querySelectorAll("tr");
+  const rows = tableManifest.querySelectorAll("tr:not(:first-child)");
 
   for (const row of rows) {
     const rowArray = [];
-    const cells = row.querySelectorAll("th");
+    const cells = row.querySelectorAll("td");
     for (const cell of cells) {
       rowArray.push(cell.textContent.trim());
     }
@@ -51,10 +34,13 @@ function handleCalBtnClick(event) {
 document.querySelectorAll(".calcbtn").forEach((button) => {
   button.addEventListener("click", handleCalBtnClick);
 });
-// const tableData = getTableArray();
-// if (tableData !== null) {
-//   console.log(tableData);
-//   // Process the table data as needed
-// } else {
-//   console.error("Failed to retrieve table data.");
-// }
+
+// Tod do:
+// - seperate tables if more than one file is InputDeviceInfo. This will probably
+//   be done by "if table already exists, make new table and populate with data"
+// - create new table element below existing tables with cells for new calculations
+
+// - extract data from generated arrays and use them to make calculations
+
+// - call API for bestBuy and Costco to retrieve part number or SKU
+// - Call API for amazon to retrieve items selling points
