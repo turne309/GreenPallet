@@ -53,3 +53,9 @@ table th {
   height: px;
   padding-left: 10px;
 }
+
+.calculationInput {
+  width: 15%;
+  display: inline-block;
+  height: 100;
+}
