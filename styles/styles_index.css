@@ -14,13 +14,21 @@ body {
 
 table {
   border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
   width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 table td,
 table th {
   border: 1px solid #ddd;
   padding: 0.5em;
+}
+
+table tr {
+  background-color: #a1d99b;
 }
 
 table tr:nth-child(2n) {
@@ -33,8 +41,15 @@ table tr:hover {
 
 table th {
   padding-top: 1em;
+
   padding-bottom: 1em;
-  text-align: left;
   background-color: #005a32;
-  color: white;
+  color: #ffffff;
+  text-align: left;
+}
+
+.calc-img {
+  align-self: center;
+  height: px;
+  padding-left: 10px;
 }
